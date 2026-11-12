@@ -1,2 +1,99 @@
 
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francia's Iconic Studio</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f8eeee;color:#35252c;font-family:Georgia,serif}
+header{text-align:center;background:#21191e;color:#f5e5e8;padding:35px 15px}
+header h1{font-size:clamp(35px,7vw,60px);letter-spacing:5px;margin:12px}
+.gold{color:#d8b78d;letter-spacing:4px}
+nav{background:#392b32;padding:17px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:12px}
+.hero{text-align:center;padding:85px 20px;background:linear-gradient(135deg,#e8cfd2,#fff5f1,#d5b9b0)}
+.hero h2{font-size:clamp(42px,9vw,75px);margin:15px}
+.btn{display:inline-block;background:#39252e;color:white;padding:16px 25px;text-decoration:none;margin:18px 5px;letter-spacing:2px;font-size:12px}
+section{text-align:center;padding:65px 20px}
+.services,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:35px auto}
+.service{background:white;padding:35px 15px;border:1px solid #e7cccc}
+.service span{font-size:35px;color:#b17c88}
+.gallery img{width:100%;height:290px;object-fit:cover;border-radius:5px}
+.locations{background:#ead6d4}
+.locations p{line-height:1.9}
+.booking{background:#281e24;color:white}
+select{padding:15px;width:min(100%,320px);font-size:16px}
+footer{background:#171217;color:#e8c8d0;text-align:center;padding:30px}
+</style>
+</head>
+<body>
+<header>
+<p class="gold">BEAUTY • GLAMOUR • CONFIDENCE</p>
+<h1>FRANCIA'S</h1>
+<p class="gold">ICONIC STUDIO</p>
+</header>
+<nav>
+<a href="#inicio">INICIO</a>
+<a href="#servicios">SERVICIOS</a>
+<a href="#galeria">GALERÍA</a>
+<a href="#ubicacion">UBICACIÓN</a>
+<a href="#citas">RESERVAS</a>
+</nav>
+<div class="hero" id="inicio">
+<p class="gold">WELCOME TO YOUR BEAUTY DESTINATION</p>
+<h2>BE YOUR<br>OWN ICON.</h2>
+<p>Tu belleza merece ser icónica.</p>
+<a class="btn" href="#citas">RESERVA TU CITA ✨</a>
+</div>
+<section id="servicios">
+<p class="gold">YOUR BEAUTY, OUR PASSION</p>
+<h2>NUESTROS SERVICIOS</h2>
+<div class="services">
+<div class="service"><span>✧</span><h3>PESTAÑAS</h3><p>Realza tu mirada y luce espectacular.</p></div>
+<div class="service"><span>♡</span><h3>CABELLO</h3><p>Un estilo que refleje tu personalidad.</p></div>
+<div class="service"><span>✦</span><h3>CEJAS</h3><p>Define y resalta tu expresión.</p></div>
+<div class="service"><span>❀</span><h3>MAQUILLAJE</h3><p>El toque perfecto para cada ocasión.</p></div>
+</div>
+</section>
+<section id="galeria">
+<p class="gold">BEAUTY DETAILS</p>
+<h2>ICONIC LOOKS</h2>
+<p>Inspiración para tu próximo look.</p>
+<div class="gallery">
+<img src="imagenes/aplicacion.jpg" alt="Pestañas">
+<img src="imagenes/pestanas1.jpg" alt="Extensiones de pestañas">
+<img src="imagenes/pestanas2.jpg" alt="Diseño de pestañas">
+</div>
+<p>Consulta nuestros trabajos por WhatsApp.</p>
+</section>
+<section class="locations" id="ubicacion">
+<p class="gold">FIND YOUR BEAUTY PLACE</p>
+<h2>VISÍTANOS</h2>
+<p>📍 Colonia La Joya<br>Tegucigalpa, Honduras</p>
+<p>📍 Colonia La Trinidad<br>Tegucigalpa, Honduras</p>
+<p>Escríbenos para confirmar tu ubicación y cita.</p>
+</section>
+<section class="booking" id="citas">
+<p class="gold">YOUR ICONIC MOMENT STARTS HERE</p>
+<h2>RESERVA TU CITA</h2>
+<p>Selecciona el servicio que deseas.</p>
+<select id="servicio">
+<option value="">Selecciona un servicio</option>
+<option>Pestañas</option>
+<option>Cabello</option>
+<option>Cejas</option>
+<option>Maquillaje</option>
+</select>
+<br>
+<a class="btn" href="#" onclick="const s=document.getElementById('servicio').value;if(!s){alert('Selecciona un servicio');return false;}window.open('https://wa.me/50494180397?text='+encodeURIComponent('Hola, quiero reservar una cita para '+s+'. ¿Hay disponibilidad en La Joya o La Trinidad?'),'_blank');return false;">RESERVAR POR WHATSAPP 💗</a>
+</section>
+<footer>
+<h2>FRANCIA'S ICONIC STUDIO</h2>
+<p>BEAUTY • STYLE • CONFIDENCE</p>
+<p>Tegucigalpa, Honduras</p>
+<p>© 2026 Francia's Iconic Studio</p>
+</footer>
+</body>
+</html>
